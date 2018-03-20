@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+   <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <title>Medico Chain</title>
+  </head>
+
+  <body>
+
+<header>
+<h1> Hello , user.</h1>
+<h2>Your address is,</h2> <code div id="add"></code>
+</header>
+
+
+
+<br>
+ 
+        <div class="container">
+        <input type="text"  class="form-control" id="staticEmail" placeholder="Enter patient's address"> 
+        <br>
+
+        <button id="grant_access" class="btn btn-secondary  btn-lg">Grant Acess</button>
+        </div>
+      
+  <br>
+ 
+    
+<script>
+$(document).ready(function()
+{
+   var patient_id=web3js.eth.accounts[0];
+   $("#add").html(patient_id);
+
+});
+
+</script>
+  
+
+     <br>     
+ <div class="container">
+      
+
+      <h2>Curret patients list</h2>
+  <ol class="list-group">
+  <li class="list-group-item" style="color:#333">Patient abc</li>
+  <li class="list-group-item" style="color:#333">Patient xyz</li>
+  </ol>
+  </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="test.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
